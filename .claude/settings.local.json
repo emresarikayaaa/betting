@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(mvn dependency:resolve:*)",
+      "Bash(jar tf:*)",
+      "Bash(mvn compile:*)",
+      "Bash(gauge run:*)",
+      "Bash(mvn clean:*)",
+      "Bash(mvn test:*)"
+    ]
+  }
+}

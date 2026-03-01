@@ -1,0 +1,349 @@
+src/main/java/com/bilyoner/api/LoginApiClient.java:3: error: package io.restassured does not exist
+import io.restassured.RestAssured;
+                     ^
+src/main/java/com/bilyoner/api/LoginApiClient.java:4: error: package io.restassured.response does not exist
+import io.restassured.response.Response;
+                              ^
+src/main/java/com/bilyoner/api/LoginApiClient.java:7: error: package io.restassured does not exist
+import static io.restassured.RestAssured.given;
+                            ^
+src/main/java/com/bilyoner/api/LoginApiClient.java:7: error: static import only from classes and interfaces
+import static io.restassured.RestAssured.given;
+^
+src/main/java/com/bilyoner/api/LoginApiClient.java:18: error: cannot find symbol
+    public Response login(String tckn, String password) {
+           ^
+  symbol:   class Response
+  location: class LoginApiClient
+src/main/java/com/bilyoner/api/LoginApiClient.java:35: error: cannot find symbol
+    public boolean isLoginFailed(Response response) {
+                                 ^
+  symbol:   class Response
+  location: class LoginApiClient
+src/main/java/com/bilyoner/api/LoginApiClient.java:39: error: cannot find symbol
+    public String getErrorMessage(Response response) {
+                                  ^
+  symbol:   class Response
+  location: class LoginApiClient
+src/main/java/com/bilyoner/api/LoginApiClient.java:43: error: cannot find symbol
+    public int getErrorCode(Response response) {
+                            ^
+  symbol:   class Response
+  location: class LoginApiClient
+src/main/java/com/bilyoner/constants/HomePageConstants.java:3: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src/main/java/com/bilyoner/constants/HomePageConstants.java:7: error: cannot find symbol
+    public By bulletinMenuButton = By.xpath("//a[contains(text(),'Spor')]");
+           ^
+  symbol:   class By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/HomePageConstants.java:8: error: cannot find symbol
+    public By loginButton = By.cssSelector(".btn.btn-login");
+           ^
+  symbol:   class By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/HomePageConstants.java:9: error: cannot find symbol
+    public By searchButton = By.cssSelector(".search-icon");
+           ^
+  symbol:   class By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:3: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:7: error: cannot find symbol
+    public static final By LOGIN_BUTTON = By.cssSelector("a[title='Giriş Yap']");
+                        ^
+  symbol:   class By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:8: error: cannot find symbol
+    public static final By TCKN_NO = By.id("username");
+                        ^
+  symbol:   class By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:9: error: cannot find symbol
+    public static final By PASSWORD = By.id("password");
+                        ^
+  symbol:   class By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:10: error: cannot find symbol
+    public static final By SUBMIT_LOGIN_BUTTON = By.cssSelector("button[title='GİRİŞ YAP']");
+                        ^
+  symbol:   class By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:11: error: cannot find symbol
+    public static final By ERROR_MESSAGE = By.cssSelector("p.text-error");
+                        ^
+  symbol:   class By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/driver/DriverManager.java:4: error: package io.github.bonigarcia.wdm does not exist
+import io.github.bonigarcia.wdm.WebDriverManager;
+                               ^
+src/main/java/com/bilyoner/driver/DriverManager.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.PageLoadStrategy;
+                          ^
+src/main/java/com/bilyoner/driver/DriverManager.java:6: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebDriver;
+                          ^
+src/main/java/com/bilyoner/driver/DriverManager.java:7: error: package org.openqa.selenium.chrome does not exist
+import org.openqa.selenium.chrome.ChromeDriver;
+                                 ^
+src/main/java/com/bilyoner/driver/DriverManager.java:8: error: package org.openqa.selenium.chrome does not exist
+import org.openqa.selenium.chrome.ChromeOptions;
+                                 ^
+src/main/java/com/bilyoner/driver/DriverManager.java:12: error: cannot find symbol
+    private static WebDriver driver;
+                   ^
+  symbol:   class WebDriver
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:16: error: cannot find symbol
+    public static WebDriver getDriver() {
+                  ^
+  symbol:   class WebDriver
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:24: error: cannot find symbol
+    private static WebDriver createDriver() {
+                   ^
+  symbol:   class WebDriver
+  location: class DriverManager
+src/main/java/com/bilyoner/pages/BasePage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src/main/java/com/bilyoner/pages/BasePage.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebDriver;
+                          ^
+src/main/java/com/bilyoner/pages/BasePage.java:6: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebElement;
+                          ^
+src/main/java/com/bilyoner/pages/BasePage.java:7: error: package org.openqa.selenium.support.ui does not exist
+import org.openqa.selenium.support.ui.ExpectedConditions;
+                                     ^
+src/main/java/com/bilyoner/pages/BasePage.java:8: error: package org.openqa.selenium.support.ui does not exist
+import org.openqa.selenium.support.ui.WebDriverWait;
+                                     ^
+src/main/java/com/bilyoner/pages/BasePage.java:13: error: cannot find symbol
+    protected WebDriver driver;
+              ^
+  symbol:   class WebDriver
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:16: error: cannot find symbol
+    protected WebDriverWait wait;
+              ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:27: error: cannot find symbol
+    protected WebElement waitAndFind(By locator) {
+                                     ^
+  symbol:   class By
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:27: error: cannot find symbol
+    protected WebElement waitAndFind(By locator) {
+              ^
+  symbol:   class WebElement
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:32: error: cannot find symbol
+    public void click(By locator) {
+                      ^
+  symbol:   class By
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:37: error: cannot find symbol
+    protected void sendKeys(By locator, String text) {
+                            ^
+  symbol:   class By
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:43: error: cannot find symbol
+    protected String getText(By locator) {
+                             ^
+  symbol:   class By
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:48: error: cannot find symbol
+    protected boolean isElementVisible(By locator) {
+                                       ^
+  symbol:   class By
+  location: class BasePage
+src/main/java/com/bilyoner/pages/LoginPage.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src/main/java/com/bilyoner/steps/LoginSteps.java:7: error: package lombok.extern.slf4j does not exist
+import lombok.extern.slf4j.Slf4j;
+                          ^
+src/main/java/com/bilyoner/steps/LoginSteps.java:9: error: cannot find symbol
+@Slf4j
+ ^
+  symbol: class Slf4j
+src/main/java/com/bilyoner/utils/WaitUtils.java:4: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.By;
+                          ^
+src/main/java/com/bilyoner/utils/WaitUtils.java:5: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebDriver;
+                          ^
+src/main/java/com/bilyoner/utils/WaitUtils.java:6: error: package org.openqa.selenium does not exist
+import org.openqa.selenium.WebElement;
+                          ^
+src/main/java/com/bilyoner/utils/WaitUtils.java:7: error: package org.openqa.selenium.support.ui does not exist
+import org.openqa.selenium.support.ui.ExpectedConditions;
+                                     ^
+src/main/java/com/bilyoner/utils/WaitUtils.java:8: error: package org.openqa.selenium.support.ui does not exist
+import org.openqa.selenium.support.ui.WebDriverWait;
+                                     ^
+src/main/java/com/bilyoner/utils/WaitUtils.java:13: error: cannot find symbol
+    private static WebDriver driver = DriverManager.getDriver();
+                   ^
+  symbol:   class WebDriver
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:14: error: cannot find symbol
+    private static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(
+                   ^
+  symbol:   class WebDriverWait
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:18: error: cannot find symbol
+    public static WebElement waitForVisibility(By locator) {
+                                               ^
+  symbol:   class By
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:18: error: cannot find symbol
+    public static WebElement waitForVisibility(By locator) {
+                  ^
+  symbol:   class WebElement
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:23: error: cannot find symbol
+    public static WebElement waitForClickability(By locator) {
+                                                 ^
+  symbol:   class By
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:23: error: cannot find symbol
+    public static WebElement waitForClickability(By locator) {
+                  ^
+  symbol:   class WebElement
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:37: error: cannot find symbol
+    public static boolean waitForInvisibility(By locator) {
+                                              ^
+  symbol:   class By
+  location: class WaitUtils
+src/main/java/com/bilyoner/api/LoginApiClient.java:14: error: cannot find symbol
+        RestAssured.baseURI = "https://www.bilyoner.com";
+        ^
+  symbol:   variable RestAssured
+  location: class LoginApiClient
+src/main/java/com/bilyoner/api/LoginApiClient.java:25: error: cannot find symbol
+        return given()
+               ^
+  symbol:   method given()
+  location: class LoginApiClient
+src/main/java/com/bilyoner/api/LoginApiClient.java:47: error: cannot find symbol
+        Response response = login(username,password);
+        ^
+  symbol:   class Response
+  location: class LoginApiClient
+src/main/java/com/bilyoner/constants/HomePageConstants.java:7: error: cannot find symbol
+    public By bulletinMenuButton = By.xpath("//a[contains(text(),'Spor')]");
+                                   ^
+  symbol:   variable By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/HomePageConstants.java:8: error: cannot find symbol
+    public By loginButton = By.cssSelector(".btn.btn-login");
+                            ^
+  symbol:   variable By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/HomePageConstants.java:9: error: cannot find symbol
+    public By searchButton = By.cssSelector(".search-icon");
+                             ^
+  symbol:   variable By
+  location: class HomePageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:7: error: cannot find symbol
+    public static final By LOGIN_BUTTON = By.cssSelector("a[title='Giriş Yap']");
+                                          ^
+  symbol:   variable By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:8: error: cannot find symbol
+    public static final By TCKN_NO = By.id("username");
+                                     ^
+  symbol:   variable By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:9: error: cannot find symbol
+    public static final By PASSWORD = By.id("password");
+                                      ^
+  symbol:   variable By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:10: error: cannot find symbol
+    public static final By SUBMIT_LOGIN_BUTTON = By.cssSelector("button[title='GİRİŞ YAP']");
+                                                 ^
+  symbol:   variable By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/constants/LoginPageConstants.java:11: error: cannot find symbol
+    public static final By ERROR_MESSAGE = By.cssSelector("p.text-error");
+                                           ^
+  symbol:   variable By
+  location: class LoginPageConstants
+src/main/java/com/bilyoner/driver/DriverManager.java:25: error: cannot find symbol
+        WebDriverManager.chromedriver().setup();
+        ^
+  symbol:   variable WebDriverManager
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:29: error: cannot find symbol
+        ChromeOptions options = new ChromeOptions();
+        ^
+  symbol:   class ChromeOptions
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:29: error: cannot find symbol
+        ChromeOptions options = new ChromeOptions();
+                                    ^
+  symbol:   class ChromeOptions
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:33: error: cannot find symbol
+        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+                                    ^
+  symbol:   variable PageLoadStrategy
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:35: error: cannot find symbol
+        WebDriver driver = new ChromeDriver(options);
+        ^
+  symbol:   class WebDriver
+  location: class DriverManager
+src/main/java/com/bilyoner/driver/DriverManager.java:35: error: cannot find symbol
+        WebDriver driver = new ChromeDriver(options);
+                               ^
+  symbol:   class ChromeDriver
+  location: class DriverManager
+src/main/java/com/bilyoner/pages/BasePage.java:23: error: cannot find symbol
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                        ^
+  symbol:   class WebDriverWait
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:28: error: cannot find symbol
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src/main/java/com/bilyoner/pages/BasePage.java:33: error: cannot find symbol
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+                   ^
+  symbol:   variable ExpectedConditions
+  location: class BasePage
+src/main/java/com/bilyoner/pages/LoginPage.java:24: error: cannot find symbol
+        return driver.findElement(By.className("text-error")).getText()
+                                  ^
+  symbol:   variable By
+  location: class LoginPage
+src/main/java/com/bilyoner/utils/WaitUtils.java:14: error: cannot find symbol
+    private static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(
+                                            ^
+  symbol:   class WebDriverWait
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:19: error: cannot find symbol
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:24: error: cannot find symbol
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class WaitUtils
+src/main/java/com/bilyoner/utils/WaitUtils.java:38: error: cannot find symbol
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+                          ^
+  symbol:   variable ExpectedConditions
+  location: class WaitUtils
+79 errors

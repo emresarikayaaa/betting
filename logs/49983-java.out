@@ -1,0 +1,26 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 424milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 424"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 55983"}
+{"logLevel":"info","message":"Listening on port:55983"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.bilyoner.steps.HomeSteps.clickBulletinMenu' and 'com.bilyoner.steps.HomeSteps.clickBulletinMenu'"}
+{"logLevel":"debug","message":"Found Spor menüsüne tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.bilyoner.steps.HomeSteps.navigateToHomePage' and 'com.bilyoner.steps.HomeSteps.navigateToHomePage'"}
+{"logLevel":"debug","message":"Found Ana sayfaya git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.bilyoner.steps.HomeSteps.verifyLoginButtonVisible' and 'com.bilyoner.steps.HomeSteps.verifyLoginButtonVisible'"}
+{"logLevel":"debug","message":"Found Giriş yap butonunun görünür olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonunun görünür olduğunu doğrula : public void verifyLoginButtonVisible()"}
+{"logLevel":"debug","message":"\tSpor menüsüne tıkla : public void clickBulletinMenu()"}
+{"logLevel":"debug","message":"\tAna sayfaya git : public void navigateToHomePage()"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

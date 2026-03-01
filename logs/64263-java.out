@@ -1,0 +1,47 @@
+Listening for transport dt_socket at address: 50097
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 625milliseconds to load and scan. This should be less than \u0027runner_connection_timeout\u0027 config value."}
+{"logLevel":"debug","message":"run \u0027gauge config runner_connection_timeout\u0027 and verify that it is \u003c 625"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 50129"}
+{"logLevel":"info","message":"Listening on port:50129"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.LoginSteps.checkFailMessage\u0027 and \u0027com.bilyoner.steps.LoginSteps.checkFailMessage\u0027"}
+{"logLevel":"debug","message":"Found Hata mesajının görüntülendiğini doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.LoginSteps.validateLoggedIn\u0027 and \u0027com.bilyoner.steps.LoginSteps.validateLoggedIn\u0027"}
+{"logLevel":"debug","message":"Found Girişin başarılı olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.CommonSteps.checkLoginButton\u0027 and \u0027com.bilyoner.steps.CommonSteps.checkLoginButton\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap butonunun görünür olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.LoginSteps.setUsername\u0027 and \u0027com.bilyoner.steps.LoginSteps.setUsername\u0027"}
+{"logLevel":"debug","message":"Found Kullanıcı adını gir {} in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.CommonSteps.getHomePage\u0027 and \u0027com.bilyoner.steps.CommonSteps.getHomePage\u0027"}
+{"logLevel":"debug","message":"Found Ana sayfaya git in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.HomeSteps.navigateToLoginPage\u0027 and \u0027com.bilyoner.steps.HomeSteps.navigateToLoginPage\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.LoginSteps.setPassword\u0027 and \u0027com.bilyoner.steps.LoginSteps.setPassword\u0027"}
+{"logLevel":"debug","message":"Found Şifreyi gir {} in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.LoginSteps.submitLoginForm\u0027 and \u0027com.bilyoner.steps.LoginSteps.submitLoginForm\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap butonuna tıkla login sayfasında in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonunun görünür olduğunu doğrula : public void checkLoginButton()"}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıkla : public void navigateToLoginPage()"}
+{"logLevel":"debug","message":"\tKullanıcı adını gir {} : public void setUsername(String username)"}
+{"logLevel":"debug","message":"\tGiriş yap butonuna tıkla login sayfasında : public void submitLoginForm()"}
+{"logLevel":"debug","message":"\tGirişin başarılı olduğunu doğrula : public void validateLoggedIn()"}
+{"logLevel":"debug","message":"\tŞifreyi gir {} : public void setPassword(String password)"}
+{"logLevel":"debug","message":"\tHata mesajının görüntülendiğini doğrula : public void checkFailMessage()"}
+{"logLevel":"debug","message":"\tAna sayfaya git : public void getHomePage()"}
+Mar 01, 2026 2:12:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 01, 2026 2:12:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+{"logLevel":"debug","message":"Executing \u0027Ana sayfaya git\u0027 using \u0027class com.bilyoner.steps.CommonSteps.getHomePage"}
+Bilyoner açıldı: Bilyoner: İddaa | Spor Toto
+{"logLevel":"debug","message":"Executing \u0027Giriş yap butonuna tıkla\u0027 using \u0027class com.bilyoner.steps.HomeSteps.navigateToLoginPage"}
+Listening for transport dt_socket at address: 50097
+{"logLevel":"debug","message":"Executing \u0027Kullanıcı adını gir {}\u0027 using \u0027class com.bilyoner.steps.LoginSteps.setUsername"}

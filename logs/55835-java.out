@@ -1,0 +1,23 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 441milliseconds to load and scan. This should be less than \u0027runner_connection_timeout\u0027 config value."}
+{"logLevel":"debug","message":"run \u0027gauge config runner_connection_timeout\u0027 and verify that it is \u003c 441"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 56327"}
+{"logLevel":"info","message":"Listening on port:56327"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.HomeSteps.getHomePage\u0027 and \u0027com.bilyoner.steps.HomeSteps.getHomePage\u0027"}
+{"logLevel":"debug","message":"Found Ana sayfaya git in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.bilyoner.steps.HomeSteps.checkLoginButton\u0027 and \u0027com.bilyoner.steps.HomeSteps.checkLoginButton\u0027"}
+{"logLevel":"debug","message":"Found Giriş yap butonunun görünür olduğunu doğrula in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGiriş yap butonunun görünür olduğunu doğrula : public void checkLoginButton()"}
+{"logLevel":"debug","message":"\tAna sayfaya git : public void getHomePage()"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
