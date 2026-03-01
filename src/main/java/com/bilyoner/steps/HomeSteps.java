@@ -9,7 +9,7 @@ public class HomeSteps {
 
     @Step("Giriş yap butonuna tıkla")
     public void navigateToLoginPage() {
-        homePage.cliclLoginButton();
+        homePage.clickLoginButton();
 
     }
 

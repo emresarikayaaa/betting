@@ -1,6 +1,7 @@
 package com.bilyoner.pages;
 
 import com.bilyoner.driver.DriverManager;
+import com.bilyoner.utils.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,17 +12,12 @@ import java.time.Duration;
 public class BasePage {
 
     protected WebDriver driver;
-    // WebDriver: Selenium'un tarayıcı arayüzü
-
     protected WebDriverWait wait;
-    // WebDriverWait: element beklemek için
 
     public BasePage() {
         this.driver = DriverManager.getDriver();
-        // DriverManager'dan mevcut driver'ı al
-
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        // 10 saniye bekle
+        long waitSeconds = Long.parseLong(ConfigReader.get("explicitWait"));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitSeconds));
     }
 
     protected WebElement waitAndFind(By locator) {

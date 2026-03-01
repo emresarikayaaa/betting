@@ -10,8 +10,8 @@ public class Hooks {
 
     @BeforeScenario
     public void setUp() {
+        System.out.println("Platform: " + DriverManager.getPlatform());
         homePage = new HomePage();
-
     }
 
     @AfterScenario

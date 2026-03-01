@@ -8,9 +8,13 @@ public class CommonSteps {
     private HomePage homePage;
 
     @Step("Ana sayfaya git")
-    public void getHomePage(){
-
-        System.out.println("Bilyoner açıldı: " + DriverManager.getDriver().getTitle());
+    public void getHomePage() {
+        if (DriverManager.getPlatform().isWeb()) {
+            System.out.println("Bilyoner açıldı: " + DriverManager.getDriver().getTitle());
+        } else {
+            DriverManager.getDriver(); // driver'ı başlat
+            System.out.println("Bilyoner mobil uygulama açıldı [" + DriverManager.getPlatform() + "]");
+        }
     }
 
 

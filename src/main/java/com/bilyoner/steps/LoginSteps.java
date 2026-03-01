@@ -12,13 +12,18 @@ public class LoginSteps {
     LoginPage loginPage = new LoginPage();
     LoginApiClient loginApiClient = new LoginApiClient();
 
+    private String currentTckn;
+    private String currentPassword;
+
     @Step("Kullanıcı adını gir <tckn>")
     public void setUsername(String tckn) {
+        this.currentTckn = tckn;
         loginPage.setTCKN(tckn);
     }
 
     @Step("Şifreyi gir <password>")
     public void setPassword(String password) {
+        this.currentPassword = password;
         loginPage.setPassword(password);
     }
 
@@ -41,11 +46,15 @@ public class LoginSteps {
 
     @Step("Servis tarafında girişin başarısız olduğunu doğrula")
     public void verifyLoginFailed() {
-        WebDriver driver = DriverManager.getDriver();
-        int statusCode = loginApiClient.getLoginApiStatusCode(driver);
-        int errorCode = loginApiClient.getLoginApiErrorCode(driver);
-        assert statusCode == 400 && errorCode == 401 :
-            "Login API response beklendiği gibi değil. Status: " + statusCode + ", Error code: " + errorCode;
+        if (DriverManager.getPlatform().isMobile()) {
+            boolean failed = loginApiClient.verifyLoginFailedViaApi(currentTckn, currentPassword);
+            assert failed : "Login API response beklendiği gibi değil (REST Assured ile doğrulandı).";
+        } else {
+            WebDriver driver = DriverManager.getDriver();
+            int statusCode = loginApiClient.getLoginApiStatusCode(driver);
+            int errorCode = loginApiClient.getLoginApiErrorCode(driver);
+            assert statusCode == 400 && errorCode == 401 :
+                "Login API response beklendiği gibi değil. Status: " + statusCode + ", Error code: " + errorCode;
+        }
     }
-
 }
