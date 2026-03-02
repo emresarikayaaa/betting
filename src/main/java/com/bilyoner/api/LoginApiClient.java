@@ -1,6 +1,5 @@
 package com.bilyoner.api;
 
-import com.bilyoner.driver.DriverManager;
 import io.restassured.response.Response;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,12 +27,9 @@ public class LoginApiClient extends BaseApiClient {
                 && response.jsonPath().getInt("code") == 401;
     }
 
-    // --- Tarayıcı network intercept metodları (sadece Web) ---
+    // --- Tarayıcı network intercept metodları (tüm platformlar) ---
 
     public void interceptLoginApi(WebDriver driver) {
-        if (DriverManager.getPlatform().isMobile()) {
-            return;
-        }
         ((JavascriptExecutor) driver).executeScript(
             "window.__loginApiResponse = null;" +
             "var origOpen = XMLHttpRequest.prototype.open;" +
@@ -81,9 +77,6 @@ public class LoginApiClient extends BaseApiClient {
     }
 
     public int getLoginApiStatusCode(WebDriver driver) {
-        if (DriverManager.getPlatform().isMobile()) {
-            return -1;
-        }
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(d ->
             ((JavascriptExecutor) d).executeScript("return window.__loginApiResponse !== null;").equals(true)
         );
@@ -92,9 +85,6 @@ public class LoginApiClient extends BaseApiClient {
     }
 
     public int getLoginApiErrorCode(WebDriver driver) {
-        if (DriverManager.getPlatform().isMobile()) {
-            return -1;
-        }
         Object code = ((JavascriptExecutor) driver).executeScript("return window.__loginApiResponse.body.code;");
         return ((Long) code).intValue();
     }

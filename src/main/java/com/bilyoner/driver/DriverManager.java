@@ -52,12 +52,13 @@ public class DriverManager {
         UiAutomator2Options options = new UiAutomator2Options()
                 .setDeviceName(ConfigReader.get("deviceName"))
                 .setPlatformVersion(ConfigReader.get("platformVersion"))
-                .setAppPackage(ConfigReader.get("appPackage"))
-                .setAppActivity(ConfigReader.get("appActivity"))
+                .withBrowserName(ConfigReader.get("androidBrowserName"))
                 .setAutomationName("UiAutomator2");
 
         try {
-            return new AndroidDriver(new URL(ConfigReader.get("appiumServerUrl")), options);
+            WebDriver driver = new AndroidDriver(new URL(ConfigReader.get("appiumServerUrl")), options);
+            driver.get(ConfigReader.get("baseUrl"));
+            return driver;
         } catch (MalformedURLException e) {
             throw new RuntimeException("Geçersiz Appium server URL: " + ConfigReader.get("appiumServerUrl"), e);
         }
@@ -67,11 +68,13 @@ public class DriverManager {
         XCUITestOptions options = new XCUITestOptions()
                 .setDeviceName(ConfigReader.get("iosDeviceName"))
                 .setPlatformVersion(ConfigReader.get("iosPlatformVersion"))
-                .setBundleId(ConfigReader.get("iosBundleId"))
+                .withBrowserName(ConfigReader.get("iosBrowserName"))
                 .setAutomationName("XCUITest");
 
         try {
-            return new IOSDriver(new URL(ConfigReader.get("appiumServerUrl")), options);
+            WebDriver driver = new IOSDriver(new URL(ConfigReader.get("appiumServerUrl")), options);
+            driver.get(ConfigReader.get("baseUrl"));
+            return driver;
         } catch (MalformedURLException e) {
             throw new RuntimeException("Geçersiz Appium server URL: " + ConfigReader.get("appiumServerUrl"), e);
         }

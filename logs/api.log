@@ -362,3 +362,29 @@
 01-03-2026 20:54:31.593 [Gauge] [DEBUG] Spec file added / modified: /Users/emresarikaya/IdeaProjects/Java/specs/login.spec
 01-03-2026 20:57:35.298 [Gauge] [DEBUG] Spec file removed: /Users/emresarikaya/IdeaProjects/Java/specs/login.spec
 01-03-2026 20:57:35.303 [Gauge] [DEBUG] Spec file added / modified: /Users/emresarikaya/IdeaProjects/Java/specs/login.spec
+02-03-2026 11:00:12.221 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+02-03-2026 11:00:12.232 [Gauge] [INFO] Initializing specs cache with 2 specs
+02-03-2026 11:00:12.232 [Gauge] [DEBUG] Adding specs from /Users/emresarikaya/IdeaProjects/Java/specs/login.spec
+02-03-2026 11:00:12.232 [Gauge] [DEBUG] Adding specs from /Users/emresarikaya/IdeaProjects/Java/specs/home.spec
+02-03-2026 11:00:12.232 [Gauge] [INFO] Initializing steps cache with 2 steps
+02-03-2026 11:00:12.233 [Gauge] [INFO] Gauge daemon initialized and listening on port: 63986
+02-03-2026 11:00:12.235 [Gauge] [DEBUG] Watching directory: /Users/emresarikaya/IdeaProjects/Java/specs
+02-03-2026 11:00:12.235 [Gauge] [DEBUG] Found 2 files
+02-03-2026 19:29:24.885 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Ana sayfaya git"}
+02-03-2026 19:29:24.893 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Ana sayfaya git" parameterizedStepValue:"Ana sayfaya git"}}
+02-03-2026 19:29:24.896 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Kullanıcı adını gir <tckn>"}
+02-03-2026 19:29:24.896 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Kullanıcı adını gir {}" parameterizedStepValue:"Kullanıcı adını gir <tckn>" parameters:"tckn"}}
+02-03-2026 19:29:24.901 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Giriş yap butonunun görünür olduğunu doğrula"}
+02-03-2026 19:29:24.901 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Giriş yap butonunun görünür olduğunu doğrula" parameterizedStepValue:"Giriş yap butonunun görünür olduğunu doğrula"}}
+02-03-2026 19:29:24.902 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Şifreyi gir <password>"}
+02-03-2026 19:29:24.902 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Şifreyi gir {}" parameterizedStepValue:"Şifreyi gir <password>" parameters:"password"}}
+02-03-2026 19:29:24.902 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Giriş yap butonuna tıkla login sayfasında"}
+02-03-2026 19:29:24.902 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Giriş yap butonuna tıkla login sayfasında" parameterizedStepValue:"Giriş yap butonuna tıkla login sayfasında"}}
+02-03-2026 19:29:24.903 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Girişin başarısız olduğunu doğrula"}
+02-03-2026 19:29:24.903 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Girişin başarısız olduğunu doğrula" parameterizedStepValue:"Girişin başarısız olduğunu doğrula"}}
+02-03-2026 19:29:24.904 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Hata mesajının görüntülendiğini doğrula"}
+02-03-2026 19:29:24.904 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Hata mesajının görüntülendiğini doğrula" parameterizedStepValue:"Hata mesajının görüntülendiğini doğrula"}}
+02-03-2026 19:29:24.905 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Servis tarafında girişin başarısız olduğunu doğrula"}
+02-03-2026 19:29:24.906 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Servis tarafında girişin başarısız olduğunu doğrula" parameterizedStepValue:"Servis tarafında girişin başarısız olduğunu doğrula"}}
+02-03-2026 19:29:24.958 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:{stepText:"Giriş yap butonuna tıkla"}
+02-03-2026 19:29:24.958 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:{stepValue:{stepValue:"Giriş yap butonuna tıkla" parameterizedStepValue:"Giriş yap butonuna tıkla"}}
