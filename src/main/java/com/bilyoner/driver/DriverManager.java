@@ -19,7 +19,7 @@ public class DriverManager {
             options.addArguments("--start-maximized");
             options.addArguments("--disable-notifications");
             options.addArguments("--remote-allow-origins=*");
-            options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+            options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 
             driver = new ChromeDriver(options);
             driver.get(ConfigReader.get("baseUrl"));

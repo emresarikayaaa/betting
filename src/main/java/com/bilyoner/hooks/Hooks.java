@@ -1,6 +1,7 @@
 package com.bilyoner.hooks;
 
 import com.bilyoner.driver.DriverManager;
+import com.bilyoner.utils.ScenarioContext;
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
 
@@ -13,5 +14,6 @@ public class Hooks {
     @AfterScenario
     public void tearDown() {
         DriverManager.quitDriver();
+        ScenarioContext.clear();
     }
 }

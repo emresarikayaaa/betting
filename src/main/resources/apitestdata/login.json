@@ -1,0 +1,14 @@
+{
+  "validLogin": {
+    "username": "emilys",
+    "password": "emilyspass"
+  },
+  "invalidLogin": {
+    "username": "invalidUser",
+    "password": "wrongPass"
+  },
+  "uiInvalidLogin": {
+    "tckn": "26660106692",
+    "password": "Test1234!"
+  }
+}

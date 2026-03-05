@@ -7,4 +7,8 @@ public class HomePage extends BasePage {
     public void clickLoginButton() {
         driver.findElements(HomePageConstants.LOGIN_BUTTON).get(1).click();
     }
+
+    public boolean isLoginButtonVisible() {
+        return isElementVisible(HomePageConstants.LOGIN_BUTTON);
+    }
 }

@@ -1,7 +1,9 @@
 {
 	"Args": [
 		"run",
-		"--dir=/Users/emresarikaya/IdeaProjects/Java"
+		"--machine-readable",
+		"--hide-suggestion",
+		"--simple-console"
 	],
 	"FailedItems": []
 }

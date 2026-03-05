@@ -1,6 +1,8 @@
 [
-	"gauge",
+	"/usr/local/bin/gauge",
 	"run",
-	"--dir=/Users/emresarikaya/IdeaProjects/Java",
-	"/Users/emresarikaya/IdeaProjects/Java/specs"
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"/Users/emresarikaya/IdeaProjects/Java/specs/login.spec:16"
 ]
