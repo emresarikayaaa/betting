@@ -1,0 +1,10 @@
+{
+  "validCredentials" :{
+    "firstName" : "Emre",
+    "lastName" : "Sarikaya",
+    "age" : 250,
+    "email" : "emretestgauge@gmail.com",
+    "password" : "Emre111*",
+    "username" : "Skywalker"
+   }
+}

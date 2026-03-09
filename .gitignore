@@ -5,3 +5,9 @@ logs/
 .DS_Store
 CLAUDE.md
 .claude/
+
+.gauge/screenshots/
+.gauge/*.json
+logs/
+*.apk
+src/main/resources/apps/Payload/

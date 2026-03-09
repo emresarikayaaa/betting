@@ -1,23 +1,20 @@
 package com.bilyoner.pages;
 
-import com.bilyoner.constants.LoginPageConstants;
+import com.bilyoner.constants.LocatorFactory;
+
 
 public class LoginPage extends BasePage {
 
-    public void setTCKN(String tckn) {
-        sendKeys(LoginPageConstants.TCKN_NO, tckn);
+    public void setUsername(String username) {
+        sendKeys(LocatorFactory.loginPage().getUsernameField(), username);
+    }
+    public void setPassword(String password) throws InterruptedException {
+        sendKeys(LocatorFactory.loginPage().getPasswordField(), password);
+
+    }
+    public void clickLoginButton() throws InterruptedException {
+        click(LocatorFactory.loginPage().getUsernameField());
+        click(LocatorFactory.loginPage().getLoginButton());
     }
 
-    public void setPassword(String password) {
-        sendKeys(LoginPageConstants.PASSWORD, password);
-    }
-
-    public void submitLoginForm() {
-        click(LoginPageConstants.SUBMIT_LOGIN_BUTTON);
-    }
-
-    public boolean verifyErrorMessage() {
-        String errorText = getText(LoginPageConstants.ERROR_MESSAGE);
-        return errorText.equals("Üye / TC Kimlik Numaranız veya Şifreniz hatalıdır! Lütfen tekrar deneyiniz.");
-    }
 }

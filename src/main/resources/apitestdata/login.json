@@ -7,8 +7,12 @@
     "username": "invalidUser",
     "password": "wrongPass"
   },
+  "uiValidLogin": {
+    "username": "bod@example.com",
+    "password": "10203040"
+  },
   "uiInvalidLogin": {
-    "tckn": "26660106692",
-    "password": "Test1234!"
+    "username": "invalidUser",
+    "password": "wrongPass"
   }
 }

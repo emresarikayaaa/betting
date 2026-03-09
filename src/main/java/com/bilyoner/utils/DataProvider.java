@@ -2,7 +2,6 @@ package com.bilyoner.utils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.InputStream;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,7 +21,7 @@ import java.util.concurrent.ConcurrentHashMap;
         }
 
         private static Map<String, Map<String, String>> loadFile(String fileName) {
-            String path = "testdata/" + fileName + ".json";
+            String path = "apitestdata/" + fileName + ".json";
             try (InputStream is = DataProvider.class.getClassLoader().getResourceAsStream(path)) {
                 if (is == null) {
                     throw new RuntimeException("Test veri dosyası bulunamadı: " + path);
